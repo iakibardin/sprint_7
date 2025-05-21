@@ -1,0 +1,84 @@
+{
+  "uid" : "4220403c2534cd2c",
+  "name" : "Создание курьера с password = null",
+  "fullName" : "CourierCreateTest.createCourierWithPasswordNull",
+  "historyId" : "d316a8aea1bc2b268e63e59dfae017a3",
+  "time" : {
+    "start" : 1747863760767,
+    "stop" : 1747863760894,
+    "duration" : 127
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание курьера",
+      "time" : {
+        "start" : 1747863760768,
+        "stop" : 1747863760888,
+        "duration" : 120
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "courier",
+        "value" : "Courier(login=JsQJEEFXyU, password=null, firstName=null)"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "CourierCreateTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createCourierWithPasswordNull"
+  }, {
+    "name" : "suite",
+    "value" : "CourierCreateTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Ilya-2.local"
+  }, {
+    "name" : "thread",
+    "value" : "98214@MacBook-Pro-Ilya-2.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4220403c2534cd2c.json",
+  "parameterValues" : [ ]
+}

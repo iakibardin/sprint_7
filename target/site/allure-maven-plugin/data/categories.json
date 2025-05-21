@@ -1,0 +1,56 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "1 expectation failed.\nJSON path ok doesn't match.\nExpected: <true>\n  Actual: null\n",
+      "children" : [ {
+        "name" : "Create order",
+        "uid" : "2659ad26ef1f74cc",
+        "parentUid" : "77ad0bfebd5c4aab4a189fe36e9db3bc",
+        "status" : "failed",
+        "time" : {
+          "start" : 1747863758732,
+          "stop" : 1747863758957,
+          "duration" : 225
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "77ad0bfebd5c4aab4a189fe36e9db3bc"
+    }, {
+      "name" : "1 expectation failed.\nExpected status code <400> but was <504>.\n",
+      "children" : [ {
+        "name" : "Авторизация с password = null",
+        "uid" : "894abdcc44349407",
+        "parentUid" : "1d8f1f7a133e17931abd80cead18da26",
+        "status" : "failed",
+        "time" : {
+          "start" : 1747863761461,
+          "stop" : 1747863821992,
+          "duration" : 60531
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Авторизация без поля password",
+        "uid" : "501fa46eef4cd00f",
+        "parentUid" : "1d8f1f7a133e17931abd80cead18da26",
+        "status" : "failed",
+        "time" : {
+          "start" : 1747863823411,
+          "stop" : 1747863884205,
+          "duration" : 60794
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1d8f1f7a133e17931abd80cead18da26"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

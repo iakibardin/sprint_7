@@ -1,0 +1,138 @@
+{
+  "uid" : "cd0f44aa61619fb8",
+  "name" : "Создание курьера с существующим логином",
+  "fullName" : "CourierCreateTest.createCourierWithExistingLogin",
+  "historyId" : "39e573f5618685a835a5d172159860a1",
+  "time" : {
+    "start" : 1747863759472,
+    "stop" : 1747863759837,
+    "duration" : 365
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание курьера",
+      "time" : {
+        "start" : 1747863759473,
+        "stop" : 1747863759562,
+        "duration" : 89
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "courier",
+        "value" : "Courier(login=EF2SK2Bwfc, password=password, firstName=name)"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Создание курьера",
+      "time" : {
+        "start" : 1747863759562,
+        "stop" : 1747863759660,
+        "duration" : 98
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "courier",
+        "value" : "Courier(login=EF2SK2Bwfc, password=password, firstName=name)"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Авторизация курьера",
+      "time" : {
+        "start" : 1747863759671,
+        "stop" : 1747863759757,
+        "duration" : 86
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "courierForAuth",
+        "value" : "CourierForAuth(login=EF2SK2Bwfc, password=password)"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Удаление курьера",
+      "time" : {
+        "start" : 1747863759763,
+        "stop" : 1747863759831,
+        "duration" : 68
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "courierId",
+        "value" : "526364"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "CourierCreateTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createCourierWithExistingLogin"
+  }, {
+    "name" : "suite",
+    "value" : "CourierCreateTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Ilya-2.local"
+  }, {
+    "name" : "thread",
+    "value" : "98214@MacBook-Pro-Ilya-2.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cd0f44aa61619fb8.json",
+  "parameterValues" : [ ]
+}

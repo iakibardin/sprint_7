@@ -1,0 +1,84 @@
+{
+  "uid" : "3f76d1ddbdfbbea3",
+  "name" : "Создание курьера без поля login",
+  "fullName" : "CourierCreateTest.createCourierWithoutLogin",
+  "historyId" : "302eb94724af0c396d5f8835e8d7e472",
+  "time" : {
+    "start" : 1747863760188,
+    "stop" : 1747863760242,
+    "duration" : 54
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание курьера без поля login",
+      "time" : {
+        "start" : 1747863760189,
+        "stop" : 1747863760237,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "courierWithoutLogin",
+        "value" : "CourierWithoutLogin(password=password)"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "CourierCreateTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createCourierWithoutLogin"
+  }, {
+    "name" : "suite",
+    "value" : "CourierCreateTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Ilya-2.local"
+  }, {
+    "name" : "thread",
+    "value" : "98214@MacBook-Pro-Ilya-2.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3f76d1ddbdfbbea3.json",
+  "parameterValues" : [ ]
+}

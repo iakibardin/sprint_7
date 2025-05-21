@@ -1,0 +1,120 @@
+{
+  "uid" : "7e4d3e92d969a84",
+  "name" : "Удаление курьера",
+  "fullName" : "DeleteCourierTest.deleteCourier",
+  "historyId" : "cb8ce2110f47d9f6bbdf6de330fd315",
+  "time" : {
+    "start" : 1747863884778,
+    "stop" : 1747863885116,
+    "duration" : 338
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание курьера",
+      "time" : {
+        "start" : 1747863884778,
+        "stop" : 1747863884896,
+        "duration" : 118
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "courier",
+        "value" : "Courier(login=uc1fS43XEP, password=password, firstName=name)"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Авторизация курьера",
+      "time" : {
+        "start" : 1747863884896,
+        "stop" : 1747863885007,
+        "duration" : 111
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "courierForAuth",
+        "value" : "CourierForAuth(login=uc1fS43XEP, password=password)"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Удаление курьера",
+      "time" : {
+        "start" : 1747863885014,
+        "stop" : 1747863885110,
+        "duration" : 96
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "courierId",
+        "value" : "526375"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "DeleteCourierTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "deleteCourier"
+  }, {
+    "name" : "suite",
+    "value" : "DeleteCourierTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Ilya-2.local"
+  }, {
+    "name" : "thread",
+    "value" : "98214@MacBook-Pro-Ilya-2.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7e4d3e92d969a84.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,102 @@
+{
+  "uid" : "4452ebdbc01f9489",
+  "name" : "Create order",
+  "fullName" : "OrderCreateTest.createOrder[3 : color не указан]",
+  "historyId" : "388dda2559cb745e859fbf2a5afdb4a6",
+  "time" : {
+    "start" : 1747863758959,
+    "stop" : 1747863759231,
+    "duration" : 272
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание заказа",
+      "time" : {
+        "start" : 1747863758959,
+        "stop" : 1747863759064,
+        "duration" : 105
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "order",
+        "value" : "Order(firstName=Имя Четыре, lastName=Фамилия, address=Адрес 4, metroStation=Соколиная гора, phone=79994444444, rentTime=4, deliveryDate=2023-07-17, comment=не указан, color=[])"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Завершение заказа",
+      "time" : {
+        "start" : 1747863759075,
+        "stop" : 1747863759225,
+        "duration" : 150
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "560596"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "OrderCreateTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createOrder[3 : color не указан]"
+  }, {
+    "name" : "suite",
+    "value" : "OrderCreateTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Ilya-2.local"
+  }, {
+    "name" : "thread",
+    "value" : "98214@MacBook-Pro-Ilya-2.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4452ebdbc01f9489.json",
+  "parameterValues" : [ ]
+}
