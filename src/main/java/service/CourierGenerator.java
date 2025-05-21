@@ -1,0 +1,70 @@
+package service;
+
+import org.apache.commons.lang3.RandomStringUtils;
+import model.courier.Courier;
+import model.courier.CourierWithoutLogin;
+import model.courier.CourierWithoutPassword;
+import model.courier.CourierForAuth;
+import model.courier.CourierForAuthWithoutLogin;
+import model.courier.CourierForAuthWithoutPassword;
+
+public class CourierGenerator {
+    private final String password = "password";
+    private final String firstName = "name";
+
+    public Courier getCourier() {
+        return Courier.builder()
+                .login(RandomStringUtils.randomAlphanumeric(10))
+                .password(password)
+                .firstName(firstName)
+                .build();
+    }
+
+    public CourierWithoutPassword getCourierWithoutPassword() {
+        return new CourierWithoutPassword(RandomStringUtils.randomAlphanumeric(10));
+    }
+
+    public Courier getCourierWithPasswordNull() {
+        return Courier.builder()
+                .login(RandomStringUtils.randomAlphanumeric(10))
+                .build();
+    }
+
+    public CourierWithoutLogin getCourierWithoutLogin() {
+
+        return new CourierWithoutLogin(password);
+    }
+
+    public Courier getCourierWithLoginNull() {
+        return Courier.builder()
+                .password(password)
+                .build();
+    }
+
+    public CourierForAuth getCourierForAuth(Courier courier) {
+        return CourierForAuth.builder()
+                .login(courier.getLogin())
+                .password(courier.getPassword())
+                .build();
+    }
+
+    public CourierForAuthWithoutLogin getCourierForAuthWithoutLogin(Courier courier) {
+        return new CourierForAuthWithoutLogin(courier);
+    }
+
+    public CourierForAuthWithoutPassword getCourierForAuthWithoutPassword(Courier courier) {
+        return new CourierForAuthWithoutPassword(courier);
+    }
+
+    public CourierForAuth getCourierForAuthWithLoginNull(Courier courier) {
+        return CourierForAuth.builder()
+                .password(courier.getPassword())
+                .build();
+    }
+
+    public CourierForAuth getCourierForAuthWithPasswordNull(Courier courier) {
+        return CourierForAuth.builder()
+                .login(courier.getLogin())
+                .build();
+    }
+}
