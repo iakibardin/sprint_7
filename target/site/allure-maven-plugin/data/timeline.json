@@ -1,0 +1,325 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "MacBook-Pro-Ilya-2.local",
+    "children" : [ {
+      "name" : "98214@MacBook-Pro-Ilya-2.local.main(1)",
+      "children" : [ {
+        "name" : "Создание курьера с password = null",
+        "uid" : "4220403c2534cd2c",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863760767,
+          "stop" : 1747863760894,
+          "duration" : 127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Авторизация без поля login",
+        "uid" : "bc905acff6834eeb",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863823102,
+          "stop" : 1747863823410,
+          "duration" : 308
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Создание курьера без поля name",
+        "uid" : "a5f9c31556e3cf2d",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863760302,
+          "stop" : 1747863760653,
+          "duration" : 351
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Создание курьера с существующим логином",
+        "uid" : "cd0f44aa61619fb8",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863759472,
+          "stop" : 1747863759837,
+          "duration" : 365
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Корректная авторизация",
+        "uid" : "150f22b749cdc180",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863822612,
+          "stop" : 1747863823101,
+          "duration" : 489
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create order",
+        "uid" : "b4637cd1e2811871",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863759232,
+          "stop" : 1747863759469,
+          "duration" : 237
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Авторизация без поля password",
+        "uid" : "501fa46eef4cd00f",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1747863823411,
+          "stop" : 1747863884205,
+          "duration" : 60794
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Авторизация с password = null",
+        "uid" : "894abdcc44349407",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1747863761461,
+          "stop" : 1747863821992,
+          "duration" : 60531
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Получение заказа по номеру",
+        "uid" : "c56448dd12b4bc90",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863761063,
+          "stop" : 1747863761460,
+          "duration" : 397
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create order",
+        "uid" : "2659ad26ef1f74cc",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1747863758732,
+          "stop" : 1747863758957,
+          "duration" : 225
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Авторизация с нсуществующей парой логин/пароль",
+        "uid" : "c8059510ca55b322",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863821998,
+          "stop" : 1747863822611,
+          "duration" : 613
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Создание курьера с login = null",
+        "uid" : "6690b6866207f81e",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863760655,
+          "stop" : 1747863760766,
+          "duration" : 111
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Создание курьера без поля login",
+        "uid" : "3f76d1ddbdfbbea3",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863760188,
+          "stop" : 1747863760242,
+          "duration" : 54
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Создание курьера с параметрами логин, пароль, имя",
+        "uid" : "4a5fab81283b1f2",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863759838,
+          "stop" : 1747863760186,
+          "duration" : 348
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create order",
+        "uid" : "bc4bf809b320613",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863756661,
+          "stop" : 1747863758411,
+          "duration" : 1750
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Получение списка заказов",
+        "uid" : "f58ce26ba8b35f53",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863885118,
+          "stop" : 1747863887519,
+          "duration" : 2401
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Получение заказа по несуществующему номеру",
+        "uid" : "d4c819520ff3334f",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863760952,
+          "stop" : 1747863761062,
+          "duration" : 110
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Получение заказа без указания номера",
+        "uid" : "7c8bd63666781182",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863760896,
+          "stop" : 1747863760951,
+          "duration" : 55
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Авторизация с login = null",
+        "uid" : "bc5e3b1c7c8c90ef",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863884210,
+          "stop" : 1747863884704,
+          "duration" : 494
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create order",
+        "uid" : "c688bbd7312cce7c",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863758452,
+          "stop" : 1747863758729,
+          "duration" : 277
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Удаление курьера по несуществующему id",
+        "uid" : "3ecf60ee94e8d8c",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863884707,
+          "stop" : 1747863884777,
+          "duration" : 70
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Удаление курьера",
+        "uid" : "7e4d3e92d969a84",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863884778,
+          "stop" : 1747863885116,
+          "duration" : 338
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Создание курьера без поля password",
+        "uid" : "6ba042c24325653",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863760243,
+          "stop" : 1747863760301,
+          "duration" : 58
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create order",
+        "uid" : "4452ebdbc01f9489",
+        "parentUid" : "fcacab967e443ed21ccbc84d03e51ef6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1747863758959,
+          "stop" : 1747863759231,
+          "duration" : 272
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fcacab967e443ed21ccbc84d03e51ef6"
+    } ],
+    "uid" : "dcd7848a36fc045ad6f8dbd0c0dd71dc"
+  } ]
+}
