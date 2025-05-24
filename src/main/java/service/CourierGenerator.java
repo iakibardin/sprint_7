@@ -20,9 +20,7 @@ public class CourierGenerator {
                 .build();
     }
 
-    public CourierWithoutPassword getCourierWithoutPassword() {
-        return new CourierWithoutPassword(RandomStringUtils.randomAlphanumeric(10));
-    }
+
 
     public Courier getCourierWithPasswordNull() {
         return Courier.builder()
@@ -30,10 +28,6 @@ public class CourierGenerator {
                 .build();
     }
 
-    public CourierWithoutLogin getCourierWithoutLogin() {
-
-        return new CourierWithoutLogin(password);
-    }
 
     public Courier getCourierWithLoginNull() {
         return Courier.builder()

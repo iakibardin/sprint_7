@@ -2,15 +2,11 @@ import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpStatus;
-import org.hamcrest.CoreMatchers;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import client.CourierClient;
 import model.courier.Courier;
 import model.courier.CourierForAuth;
-import model.courier.CourierForAuthWithoutLogin;
-import model.courier.CourierForAuthWithoutPassword;
 import service.CourierGenerator;
 
 import static org.hamcrest.CoreMatchers.*;
@@ -49,10 +45,12 @@ public class LoginTest extends BaseTest {
     @Test
     @DisplayName("Авторизация без поля login")
     public void courierWithoutLogin() {
-        CourierForAuthWithoutLogin courierForAuthWithoutLogin = generator.getCourierForAuthWithoutLogin(courier);
-        log.info(COURIER_AUTHORIZATION, courierForAuthWithoutLogin);
+        CourierForAuth courierForAuth = CourierForAuth.builder()
+                .password(this.courierForAuth.getPassword())
+                .build();
+        log.info(COURIER_AUTHORIZATION, courierForAuth);
 
-        Response response = courierClient.loginWithoutLogin(courierForAuthWithoutLogin);
+        Response response = courierClient.login(courierForAuth);
         log.info(RESPONSE + "\n", response.body().asString());
 
         response.then().statusCode(HttpStatus.SC_BAD_REQUEST)
@@ -62,10 +60,12 @@ public class LoginTest extends BaseTest {
     @Test
     @DisplayName("Авторизация без поля password")
     public void courierWithoutPassword() {
-        CourierForAuthWithoutPassword courierForAuthWithoutPassword = generator.getCourierForAuthWithoutPassword(courier);
-        log.info(COURIER_AUTHORIZATION, courierForAuthWithoutPassword);
+        CourierForAuth courierForAuth = CourierForAuth.builder()
+                .login(this.courierForAuth.getLogin())
+                .build();
+        log.info(COURIER_AUTHORIZATION, courierForAuth);
 
-        Response response = courierClient.loginWithoutPassword(courierForAuthWithoutPassword);
+        Response response = courierClient.login(courierForAuth);
         log.info(RESPONSE + "\n", response.body().asString());
 
         response.then().statusCode(HttpStatus.SC_BAD_REQUEST)

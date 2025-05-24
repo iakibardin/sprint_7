@@ -2,13 +2,11 @@ import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpStatus;
-import org.junit.After;
 import org.junit.Test;
 import client.CourierClient;
 import model.courier.Courier;
-import model.courier.CourierWithoutLogin;
-import model.courier.CourierWithoutPassword;
 import service.CourierGenerator;
+import org.apache.commons.lang3.RandomStringUtils;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 
@@ -68,10 +66,12 @@ public class CourierCreateTest extends BaseTest {
     @Test
     @DisplayName("Создание курьера без поля password")
     public void createCourierWithoutPassword() {
-        CourierWithoutPassword courierWithoutPassword = generator.getCourierWithoutPassword();
-        log.info(CREATE_COURIER, courierWithoutPassword);
-
-        Response response = courierClient.createWithoutPassword(courierWithoutPassword);
+        Courier courier = Courier.builder()
+                .login(RandomStringUtils.randomAlphanumeric(10))
+                .firstName("name")
+                .build();
+        log.info(CREATE_COURIER, courier);
+        Response response = courierClient.create(courier);
         log.info(RESPONSE, response.body().asString());
 
         response.then().statusCode(HttpStatus.SC_BAD_REQUEST)
@@ -94,10 +94,13 @@ public class CourierCreateTest extends BaseTest {
     @Test
     @DisplayName("Создание курьера без поля login")
     public void createCourierWithoutLogin() {
-        CourierWithoutLogin courierWithoutLogin = generator.getCourierWithoutLogin();
-        log.info(CREATE_COURIER, courierWithoutLogin);
+        Courier courier = Courier.builder()
+                .password("password")
+                .firstName("name")
+                .build();
+        log.info(CREATE_COURIER, courier);
 
-        Response response = courierClient.createWithoutLogin(courierWithoutLogin);
+        Response response = courierClient.create(courier);
         log.info(RESPONSE, response.body().asString());
 
         response.then().statusCode(HttpStatus.SC_BAD_REQUEST)
